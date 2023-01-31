@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Poli-form</title>
+</head>
+<body class="bg">
+  <main class="container">
+
+     <!-- Section image -->   
+    <div class="image1">
+      <img src="image/image-poli.png">
+    </div>
+
+     <!-- Section content -->
+    <div class="content">
+      <h1 class="font1">Centralize a <br>comunicação da<br> sua empresa!</h1>		
+        <div class="font2">
+         <p>Todos seus clientes atendidos em <br>um só lugar</p>					
+        </div>
+        <div class="elementor-image">
+          <img src="image/Group-254.svg" width="262" height="57">
+        </div>
+        <div class="font2">
+          <p>Comece já a testar a plataforma Poli<br/><strong>gratuitamente por 7 dias.</strong></p>					
+        </div>
+        <div class="image2grupo">
+          <img src="image/Logos-grupo-1-1.svg" width="775" height="48">
+        </div>
+    </div>
+
+    <!-- Section form -->
+    <div class="space-form">
+     <form id="form" class="form">
+      <section id="select-section1" style="padding: 10px;">
+        <div>
+          <div class="image-logo">
+            <img src="image/Poli_logo.svg">
+          </div>
+          <label style="font-family: arial; font-size:16px; display: block; padding: 25px 25px; line-height: 24px; text-align: center;">Você pretende utilizar a plataforma na<br>
+            empresa que você é dono ou trabalha?
+          </label>
+
+          <div style="position: flex; margin: 0px 0px 20px 60px;">
+            <select
+              style="
+              width: 250px;
+              padding: 10px;
+              border-radius: 12px;
+              border-color: #e7e7e7;
+              background-color: #e7e7e7;
+              "
+              id="possui_empresa_html"
+              class="poli-lead-field data-lead-register"
+              name="possui_empresa_html">
+              <option value="text">--Selecione uma opção--</option>
+              <option value="SIM">
+                Sim, quero utilizar na empresa em que sou dono ou trabalho
+              </option>
+              <option value="NÃO">
+                Não trabalho em uma empresa | Quero utilizar como pessoa física
+              </option>
+            </select>
+          </div>
+        </div>
+        <div id="button" style="display: flex; justify-content: center;">
+          <button id="btn-next-page-3_html" type="button" class="button" onclick="validar()">
+            Próximo
+          </button>
+         </div>
+        </section>
+
+        <!-- section form2 -->
+        <section id="select-section2" class="section2">
+          <div id="responsive" style="display: block; margin: 0px 0px 20px 60px;">
+            <section id="" style="padding: 5px 10px;">
+              <div id="">
+                <label for="input-nome" style="padding-bottom: 10px;">Seu Nome</label>
+              </div>
+              <div id="input-nome">
+                <input
+                  style="
+                  width: 250px;
+                  padding: 10px;
+                  border-radius: 12px;
+                  border-color: #e7e7e7;
+                  background-color: #e7e7e7;
+                  "
+                  placeholder="Ex: João Alves"
+                  id="nome_html"
+                  type="text"
+                  minlength="3"
+                  maxlength="60"
+                  class="poli-lead-field data-lead-register"
+                  name="nome_cliente_html"
+                  />
+              </div>
+            </section>
+  
+            <section id="section-telefone_html" style="padding: 5px 10px;">
+              <div id="div-telefone_html">
+                <label for="input-telefone" style="padding-bottom: 10px;">DDD +
+                  Telefone WhatsApp</label>
+              </div>
+  
+              <div id="input-telefone">
+                <input
+                  style="
+                  width: 250px;
+                  padding: 10px;
+                  border-radius: 12px;
+                  border-color: #e7e7e7;
+                  background-color: #e7e7e7;
+                  "
+                  placeholder="(XX) 9XXXX-XXXX"
+                  id="telefone_html"
+                  type="tel"
+                  maxlength="15"
+                  class="poli-lead-field data-lead-register"
+                  name="telefone_cliente_html"
+                  />
+              </div>
+            </section>
+  
+            <section id="section-email_html" style="padding: 5px 10px;">
+              <div id="div-email_html" name="email_html">
+                <label for="input-email" style="padding-bottom: 10px;">E-mail</label>
+              </div>
+              <div id="input-email" type="email">
+                <input
+                  style="
+                  width: 250px;
+                  padding: 10px;
+                  border-radius: 12px;
+                  border-color: #e7e7e7;
+                  background-color: #e7e7e7;
+                  "
+                  placeholder="Ex: seu-email@email.com"
+                  id="email_html"
+                  type="email"
+                  minlength="6"
+                  maxlength="70"
+                  class="poli-lead-field data-lead-register"
+                  name="email_cliente_html"
+                  />
+              </div>
+            </section>
+  
+            <section id="" style="padding: 5px 10px;">
+              <div id="">
+                <label for="cargo-cliente_html" style="padding-bottom: 10px;">Qual cargo ocupa na empresa?</label>
+              </div>
+  
+              <div id="change-cargo_html">
+                <select
+                  style="
+                  width: 250px;
+                  padding: 13px;
+                  border-radius: 12px;
+                  border-color: #e7e7e7;
+                  background-color: #e7e7e7;
+                  "
+                  id="cargo-cliente_html"
+                  class="poli-lead-field data-lead-register"
+                  name="cargo_cliente_html">
+                  <option value="">--Selecione uma opção--</option>
+                  <option value="Analista">Analista</option>
+                  <option value="Administrador">Administrador</option>
+                  <option value="Dono">Dono</option>
+                  <option value="Estagiário">Estagiário</option>
+                  <option value="Autônomo">Autônomo</option>
+                  <option value="Gerente">Gerente</option>
+                  <option value="Coordenador">Coordenador</option>
+                  <option value="Estudante">Estudante</option>
+                </select>
+              </div>
+              <!-- Próximo Step -->
+             <div id="button" style="display: flex; justify-content: center;">
+             <button class="button" id="btn-next-page-3_html" type="button" onclick="validar()">
+              Próximo
+             </button>
+             </div>
+           </section>
+          </div>
+          </section> 
+          
+          
+        <!-- section form3-->
+        <section class="section3">
+        <div id="responsive" style="margin: 0px 0px 20px 60px;">
+        <section id="select-section3" style="margin-left: 10px;">
+          <div id="div-html-website_html">
+            <label for="input-url-website_html" style="padding-bottom: 10px;">Site Institucional</label>
+          </div>
+
+          <div id="input-url-website_html">
+            <input
+              style="
+              width: 250px;
+              padding: 10px;
+              border-radius: 12px;
+              border-color: #e7e7e7;
+              background-color: #e7e7e7;
+              "
+              placeholder="Ex: seusite.com.br"
+              id="website_html"
+              type="text"
+              minlength="4"
+              maxlength="60"
+              class="poli-lead-field data-lead-register"
+              name="website_cliente_html"
+              />
+          </div>
+        </section>
+
+        <section id="div-empresa_html" style="padding: 5px 10px;">
+          <div id="div-nome-empresa_html">
+            <label for="input-nome-empresa" style="padding-bottom: 10px;">Nome da Empresa</label>
+          </div>
+          <div id="input-nome-empresa_html">
+            <input
+              style="
+              width: 250px;
+              padding: 10px;
+              border-radius: 12px;
+              border-color: #e7e7e7;
+              background-color: #e7e7e7;
+              "
+              placeholder="Ex: Minha Empresa LTDA"
+              id="empresa_html"
+              type="text"
+              minlength="4"
+              maxlength="60"
+              name="nome_empresa_cliente_html"
+              />
+          </div>
+        </section>
+
+        <section id="div-numero-funcionarios_html" style="padding: 5px 10px;">
+          <div id="div-funcionarios_html">
+            <label for="change-funcionarios_html" style="padding-bottom: 10px;">Número
+              de Funcionários</label>
+          </div>
+          <div id="change-funcionarios_html">
+            <select
+              style="
+              padding: 13px;
+              border-radius: 12px;
+              border-color: #e7e7e7;
+              background-color: #e7e7e7;
+              "
+              id="funcionarios-cliente_html"
+              name="funcionarios_cliente_html">
+              <option value="">--Selecione uma opção--</option>
+              <option value="Sou Autônomo">Sou Autônomo</option>
+              <option value="2 a 4 colaboradores">2 a 4 colaboradores</option>
+              <option value="5 a 10 colaboradores">5 a 10 colaboradores</option>
+              <option value="11 a 20 colaboradores">11 a 20 colaboradores</option>
+              <option value="21 a 50 colaboradores">21 a 50 colaboradores</option>
+              <option value="Acima de 50 colaboradores">
+              Acima de 50 colaboradores
+              </option>
+            </select>
+          </div>
+          <div
+            style="display: inline-flex; padding: 10px; white-space: normal;">
+            <input type="checkbox" id="termos-condicoes-html" name="checkbox" />
+            <label for="checkbox" style="padding: 20px;">
+              Li e concordo com os
+              <a
+                href="https://polichat.com.br/termos-e-condicoes-da-plataforma-poli/"
+                target="_blank"><strong>Termos e Condições*</strong></a>
+            </label>
+          </div>
+          <div
+            id="span-checkbox-html"
+            style="display:none; color:tomato; font-size:14.5px;
+            margin-top:-30px;">
+            <span>Aceite os Termos e Condições para finalizar o cadastro</span>
+          </div>
+          <div
+            id="div-button-container_html"
+            style="
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 20px;
+            ">
+            <!-- botão de voltar no formulario para step anterior  -->
+            <div id="button" style="display: flex; justify-content: center;">
+              <button id="btn-submit-teste-gratis-form" class="button" type="submit" onclick="validar()">
+                Finalizar Cadastro
+              </button>
+            </div>
+          </div>
+
+        </section>
+        </div>
+      </section>
+
+      </form>
+     </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
